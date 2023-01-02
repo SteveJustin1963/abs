@@ -40,3 +40,32 @@ You can test the function by calling it with a range of input values to make sur
 0 ABS .   \ prints 0
 ```
 
+## MINT
+
+In a 2's complement system, integers are represented using a fixed number of bits, with the most significant bit (MSB) used to indicate the sign of the number. If the MSB is 0, the number is positive. If the MSB is 1, the number is negative.
+
+The range of values that can be represented by a given number of bits in a 2's complement system depends on the number of bits used to represent the integers. For example, with 16 bits, the range of possible values is from -32768 to 32767, inclusive.
+
+The integers from -32768 to -1 are represented in hexadecimal format as follows:
+
+````
+FFFF
+FFFE
+FFFD
+...
+0002
+0001
+0000
+````
+The integers from 0 to 32767 are represented in hexadecimal format as follows:
+
+````
+0000
+0001
+0002
+...
+FFFD
+FFFE
+FFFF
+````
+In this example, the hexadecimal values from 0000 to FFFF represent the integers from 0 to 32767 and from -32768 to -1, respectively, in 2's complement format.
