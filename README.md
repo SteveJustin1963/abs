@@ -69,3 +69,15 @@ FFFE
 FFFF
 ````
 In this example, the hexadecimal values from 0000 to FFFF represent the integers from 0 to 32767 and from -32768 to -1, respectively, in 2's complement format.
+
+## is zero an integer?
+Yes, zero is an integer. In mathematics, an integer is a number that can be written without a fractional component, such as -2, -1, 0, 1, 2, etc. Zero is an integer because it can be written without a fractional component.
+
+In programming, an integer is a data type that represents a whole number. Depending on the programming language and the specific implementation, integers may be represented using a fixed number of bits, such as 16 or 32 bits, or using a variable number of bits. In some languages, there may also be different types of integers, such as signed or unsigned integers, or integers of different sizes.
+
+Regardless of the specific representation or type, zero is always considered an integer in programming because it represents a whole number without a fractional component.
+
+## whats the abs of zero?
+The absolute value of zero is zero. The absolute value of a number is defined as the non-negative value of the number, regardless of its sign. Since zero is already a non-negative number, its absolute value is simply itself.
+
+
