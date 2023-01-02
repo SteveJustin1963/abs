@@ -70,6 +70,13 @@ FFFF
 ````
 In this example, the hexadecimal values from 0000 to FFFF represent the integers from 0 to 32767 and from -32768 to -1, respectively, in 2's complement format.
 
+## is zero a number ?
+Yes, zero is a number. In mathematics, a number is a concept used to represent a quantity or amount. There are several different types of numbers, including natural numbers, whole numbers, integers, rational numbers, and irrational numbers.
+
+Zero is considered a number because it is used to represent a quantity or amount. Specifically, zero represents the absence of any quantity or the lack of a magnitude.
+
+In programming, a number is a data type that represents a numeric value. Different programming languages have different ways of representing numbers, such as using integers, floating-point numbers, or complex numbers. Zero is considered a number in programming because it can be represented using one of these numeric data types.
+
 ## is zero an integer?
 Yes, zero is an integer. In mathematics, an integer is a number that can be written without a fractional component, such as -2, -1, 0, 1, 2, etc. Zero is an integer because it can be written without a fractional component.
 
@@ -79,5 +86,52 @@ Regardless of the specific representation or type, zero is always considered an 
 
 ## whats the abs of zero?
 The absolute value of zero is zero. The absolute value of a number is defined as the non-negative value of the number, regardless of its sign. Since zero is already a non-negative number, its absolute value is simply itself.
+
+## strange things about 0 in programming
+There are a few strange things about the number 0 in programming that may be worth noting:
+- In some programming languages, the number 0 is considered a "falsey" value. This means that it is treated as if it were the boolean value "false" when used in a boolean context. For example, in an if statement, a condition that evaluates to 0 will be treated as if it were "false" and the corresponding code block will not be executed.
+- In some programming languages, dividing any number by 0 is not allowed and will result in an error. This is because division by 0 is undefined in mathematics and can lead to unpredictable or erroneous results.
+- In some programming languages, the number 0 may have different representations depending on the context. For example, in C and C++, the number 0 can be represented as an integer (e.g., 0 or 0L), a floating-point number (e.g., 0.0 or 0.0f), or a pointer (e.g., NULL).
+- In some programming languages, the number 0 may have special behavior when used with certain operators or functions. For example, in Python, the number 0 is considered a "sentinel" value and is often used to indicate the end of a list or to mark a default or uninitialized state.
+
+## meaning of 0 in forth
+the number 0 is a literal value that represents the integer 0. It can be used in arithmetic expressions and other contexts where an integer value is expected.
+For example, you can use the number 0 in Forth to initialize a variable to 0, like this:
+
+```
+0 VARIABLE myvar
+```
+You can also use the number 0 in Forth as a loop counter or as a comparison value in an if statement, like this:
+
+```
+: COUNTDOWN ( n -- )
+   BEGIN
+      DUP . 1 -
+   UNTIL
+   DROP
+;
+
+10 COUNTDOWN   \ prints numbers from 10 to 1
+
+```
+```
+: IS_ZERO ( n -- flag )
+   0 =
+;
+
+10 IS_ZERO .   \ prints 0 (false)
+0 IS_ZERO .   \ prints 1 (true)
+```
+
+In these examples, the number 0 is used as the stopping condition for a loop and as the comparison value in an if statement.
+
+## In MINT
+
+do the loop when condition is false	
+```
+0=(something)     \\ code, 0 somthing= to the do(something)
+0x!               \\ store 0 in x 
+x@(true)(false)   \\ recall x then do (true) else do (false)
+
 
 
